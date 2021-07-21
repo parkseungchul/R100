@@ -13,6 +13,8 @@
 ### BATCH_JOB_EXECUTION_PARAMS
  - 잡 실행한 아이디에 파라미터 정보가 들어감
 
+https://renuevo.github.io/spring/batch/spring-batch-chapter-3/
+https://jojoldu.tistory.com/336
 <pre><code>
 DROP TABLE IF EXISTS BATCH_STEP_EXECUTION_CONTEXT ;
 DROP TABLE IF EXISTS BATCH_JOB_EXECUTION_CONTEXT ;
