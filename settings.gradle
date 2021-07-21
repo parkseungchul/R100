@@ -1,2 +1,3 @@
-rootProject.name = 'R100'
+include ":R101"
+include ":R102"
 
