@@ -11,11 +11,24 @@ public class TestDeptRepository {
     @Autowired
     DeptRepository deptRepository;
 
+    @Autowired
+    DeptRepository2 deptRepository2;
+
     @Test
     @Commit
-    public void testDataInput(){
+    public void dept(){
         for(int i=1; i<101; i++){
             deptRepository.save(new Dept(i, String.valueOf(i)+"_name", String.valueOf(i) +"_loc"));
         }
     }
+
+    @Test
+    @Commit
+    public void dept2(){
+        for(int i=1; i<2; i++){
+            deptRepository2.save(new Dept2(i, String.valueOf(i)+"_name", String.valueOf(i) +"_loc"));
+        }
+    }
+
+
 }

@@ -15,10 +15,11 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.EntityManagerFactory;
 
+// DB -> Process -> DB
 @RequiredArgsConstructor
 @Slf4j
 @Configuration
-public class JpaPageDept {
+public class JpaPageJob1 {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
@@ -27,32 +28,32 @@ public class JpaPageDept {
     private int chunkSize = 10;
 
     @Bean
-    public Job jpaPagingItemReaderJob() {
-        return jobBuilderFactory.get("JpaPageDept")
-                .start(jpaPagingItemReaderStep())
+    public Job jpaPageJob1_batchBuild() {
+        return jobBuilderFactory.get("JpaPageJob1")
+                .start(jpaPageJob1_batchStep1())
                 .build();
     }
 
     @Bean
-    public Step jpaPagingItemReaderStep() {
-        return stepBuilderFactory.get("JpaPageDeptStep")
+    public Step jpaPageJob1_batchStep1() {
+        return stepBuilderFactory.get("JpaPageJob1_Step")
                 .<Dept, Dept>chunk(chunkSize)
-                .reader(jpaPagingItemReader())
-                .writer(jpaPagingItemWriter())
+                .reader(jpaPageJob1_dbItemReader())
+                .writer(jpaPageJob1_printItemWriter())
                 .build();
     }
 
     @Bean
-    public JpaPagingItemReader<Dept> jpaPagingItemReader() {
+    public JpaPagingItemReader<Dept> jpaPageJob1_dbItemReader() {
         return new JpaPagingItemReaderBuilder<Dept>()
-                .name("JpaPageDeptReader")
+                .name("JpaPageJob1_Reader")
                 .entityManagerFactory(entityManagerFactory)
                 .pageSize(chunkSize)
                 .queryString("SELECT d FROM Dept d")
                 .build();
     }
 
-    private ItemWriter<Dept> jpaPagingItemWriter() {
+    private ItemWriter<Dept> jpaPageJob1_printItemWriter() {
         return list -> {
             for (Dept dept: list) {
                 log.debug(dept.toString());

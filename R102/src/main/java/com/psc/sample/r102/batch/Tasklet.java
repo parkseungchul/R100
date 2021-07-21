@@ -21,14 +21,14 @@ public class Tasklet {
     private final StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Job taskletJob() {
+    public Job tasklet_batchBuild() {
         return jobBuilderFactory.get("taskletJob")
-                .start(taskStep1()).next(taskStep2(null))
+                .start(tasklet_step1()).next(tasklet_step2(null))
                 .build();
     }
 
     @Bean
-    public Step taskStep1() {
+    public Step tasklet_step1() {
         return stepBuilderFactory.get("taskletStep1")
                 .tasklet((contribution, chunkContext) -> {
                     log.debug("-> job -> [step1]");
@@ -39,7 +39,7 @@ public class Tasklet {
 
     @Bean
     @JobScope
-    public Step taskStep2(@Value("#{jobParameters[date]}") String date){
+    public Step tasklet_step2(@Value("#{jobParameters[date]}") String date){
         return stepBuilderFactory.get("taskStep2")
                 .tasklet((contribution, chunkContext) -> {
                     log.debug("-> step1 -> [step2]:" + date);
