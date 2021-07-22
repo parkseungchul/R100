@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.EntityManagerFactory;
 
-// DB -> Process -> DB
+// DB -> log
 @RequiredArgsConstructor
 @Slf4j
 @Configuration
@@ -49,7 +49,7 @@ public class JpaPageJob1 {
                 .name("JpaPageJob1_Reader")
                 .entityManagerFactory(entityManagerFactory)
                 .pageSize(chunkSize)
-                .queryString("SELECT d FROM Dept d")
+                .queryString("ELECT d FROM Dept d order by dept_no asc")
                 .build();
     }
 

@@ -1,3 +1,32 @@
+이번 강의를 통해 배치 아키텍쳐와 파일,CSV,Fixed,JSON -> 파일 , 디비 -> 디비 변환을 할 수 있다. 
+
+### 레고 조립의 기분으로 가면 되요.
+  - 기본 개념 job -> step -> itemReader -> Processor -> itemWriter
+
+- 배치 프로젝트 생성
+- 배치 스키마 생성
+- tasklet 구동
+- DB schema 생성
+- tasklet 구동 
+- 한 번 더 구동. 같은 파라미터로 안 되는 거 확인
+- 외부 변수로 파라미터 변경하여 실행 확인
+- jpa -> log
+- text -> log
+- csv -> log
+- fixed -> log
+- json -> log
+
+- jpa -> db
+- text -> text
+- csv -> csv
+- fixed -> fixed
+- json -> json
+
+
+
+
+
+
 ### batch job
   - tasklet
 
@@ -15,6 +44,8 @@
 
 https://renuevo.github.io/spring/batch/spring-batch-chapter-3/
 https://jojoldu.tistory.com/336
+https://godekdls.github.io/Spring%20Batch/contents/
+
 <pre><code>
 DROP TABLE IF EXISTS BATCH_STEP_EXECUTION_CONTEXT ;
 DROP TABLE IF EXISTS BATCH_JOB_EXECUTION_CONTEXT ;

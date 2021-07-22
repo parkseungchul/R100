@@ -38,3 +38,4 @@ out/
 /gradle/wrapper/
 /gradlew
 /gradlew.bat
+/output/
