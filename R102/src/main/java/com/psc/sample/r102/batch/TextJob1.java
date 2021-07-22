@@ -19,7 +19,6 @@ import org.springframework.core.io.ClassPathResource;
 public class TextJob1 {
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
-
     private static final int chunkSize = 5;
 
     @Bean

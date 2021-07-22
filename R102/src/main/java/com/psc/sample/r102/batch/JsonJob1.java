@@ -25,7 +25,6 @@ import org.springframework.core.io.ClassPathResource;
 public class JsonJob1 {
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
-
     private static final int chunkSize = 5;
 
     @Bean

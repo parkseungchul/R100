@@ -30,7 +30,7 @@ public class Tasklet {
     @Bean
     public Step tasklet_step1() {
         return stepBuilderFactory.get("taskletStep1")
-                .tasklet((contribution, chunkContext) -> {
+                .tasklet((a,b) -> {
                     log.debug("-> job -> [step1]");
                     return RepeatStatus.FINISHED;
                 })
