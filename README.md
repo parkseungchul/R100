@@ -1,5 +1,6 @@
 ## [Can I help you?](https://www.youtube.com/playlist?list=PLogzC_RPf25H3WIJH1zq8VsmzlvVYML50)
- -  스프링 관련 코딩 해 드려요 ㅎ
+ - 스프링 관련 코딩 해 드려요 ㅎ
+ - 개인 키가 있어서 오픈하면 안되요~!!!
 
 ### R101 OAuth2 를 이용한 google, naver login
  - [youtube 강의 링크](https://youtu.be/5jOn-t1MbvY)
