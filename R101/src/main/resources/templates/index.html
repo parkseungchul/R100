@@ -2,7 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>index</title>
+<meta name="google-signin-client_id" content="236688160662-e8dujfgqhk0973dhptcpecqp2gqu5qn9.apps.googleusercontent.com">
+
+    <title>index</title>
 </head>
 <body>
 
@@ -13,6 +15,18 @@
 <div th:if="${session.user != null}">
 [[${session.user.email}]],[[${session.user.name}]] <a th:href="@{/logout}"> logout</a>
 </div>
+
+<a href="#" onclick="signOut();">Sign out</a>
+<script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+        });
+    }
+</script>
+
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 
 </body>
 </html>
