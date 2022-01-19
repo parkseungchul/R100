@@ -32,7 +32,6 @@ import javax.persistence.EntityManagerFactory;
 @Configuration
 public class CsvToJpaJob2 {
 
-
     @Autowired
     ResourceLoader resourceLoader;
 
