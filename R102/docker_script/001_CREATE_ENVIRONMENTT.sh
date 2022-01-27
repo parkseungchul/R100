@@ -1,4 +1,4 @@
-docker network create batch_network
+docker network create docker_batch_network
 
 docker run -d --name docker_batch_db \
     --network docker_batch_network \
