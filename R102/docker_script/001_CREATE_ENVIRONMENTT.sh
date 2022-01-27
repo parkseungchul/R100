@@ -8,3 +8,5 @@ docker run -d --name docker_batch_db \
     -e MYSQL_ROOT_PASSWORD=password \
     -v /Users/seungchulpark/APP/db/mysql:/var/lib/mysql \
     mysql
+
+echo 'batch-core 라이브러리 검색 이후 배치에 필요한 기본 테이블 정보 세팅'
