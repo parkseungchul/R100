@@ -1,0 +1,1 @@
+java -jar appBatch.jar --job.name=$1 v=$2
