@@ -1,0 +1,25 @@
+logging:
+  level:
+    root: info
+    com.psc.sample: debug
+server:
+  port: 80
+spring:
+  profiles:
+    active: window
+  batch:
+    job:
+      names: ${job.name:NONE}
+  application:
+    name: r1012
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    username: user01
+    password: user01

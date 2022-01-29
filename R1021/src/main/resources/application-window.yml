@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.100.100:3306/r102?serverTimezone=Asia/Seoul
