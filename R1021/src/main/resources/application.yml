@@ -11,7 +11,7 @@ spring:
     job:
       names: ${job.name:NONE}
   application:
-    name: r1012
+    name: r10121
   jpa:
     hibernate:
       ddl-auto: update

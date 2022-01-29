@@ -1,4 +1,4 @@
 spring:
   datasource:
-    url: jdbc:mysql://docker_batch_db:3306/r102?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://docker_batch_db:3306/r1021?serverTimezone=Asia/Seoul
 
