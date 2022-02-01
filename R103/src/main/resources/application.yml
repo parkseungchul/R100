@@ -1,0 +1,16 @@
+spring:
+  batch:
+    job:
+      names: ${job.name:NONE}
+  main:
+    allow-bean-definition-overriding: true
+  db1:
+    datasource:
+      jdbc-url: jdbc:mysql://192.168.100.100:3306/r103?serverTimezone=Asia/Seoul
+      username: user01
+      password: user01
+  db2:
+    datasource:
+      jdbc-url: jdbc:mysql://192.168.100.100:23306/r103?serverTimezone=Asia/Seoul
+      username: user01
+      password: user01
