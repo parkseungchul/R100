@@ -12,3 +12,7 @@ mysql
 create schema r103;
 create user 'user01'@'%' identified by 'user01';
 grant all privileges on r103.* to 'user01'@'%';
+
+
+// http://www.gisdeveloper.co.kr/?p=5546
+// https://devfunny.tistory.com/488
