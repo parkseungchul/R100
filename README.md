@@ -31,6 +31,7 @@
 
 ### R104 커밋 사이즈와 병렬 배치에 대해서.
 - youtube 강의 링크
+- 참고 링크 https://oingdaddy.tistory.com/182
 - 내용
   - chunkSize
   - parallel
