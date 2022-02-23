@@ -7,7 +7,7 @@
  - OAuth2 login (google, naver) + spring security // 스프링 부트와 AWS로 혼자 구현하는 웹 서비스
  - OAuth2 login 화면 커스텀 참고  url: http://yoonbumtae.com/?p=2872
 
-### R102 4. SPRING BATCH Docker로 실행 환경 구성 (Gradle)
+### 4. SPRING BATCH Docker로 실행 환경 구성 (Gradle)
 - youtube 강의 링크 https://youtu.be/rYg3o5vlxLY
 - 내용
   - 강의 내용
@@ -23,14 +23,14 @@
   - 그레이들 환경 만들기
 
 ### R103 6. SPRING Multi DataSource
-- youtube 강의 링크 
+- youtube 강의 링크 https://youtu.be/yJS1Upu7D1U
 - 내용
   - 강의 안내
   - 멀티 데이터 소스 환경 구성 
   - 배치 파일 생성
 
-### R104 커밋 사이즈와 병렬 배치에 대해서.
-- youtube 강의 링크
+### R104 7. Chunk Size 와 Parallel Spring Batch
+- youtube 강의 링크 https://youtu.be/EC7oPLIhyuM
 - 참고 링크 https://oingdaddy.tistory.com/182
 - 내용
   - chunkSize

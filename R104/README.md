@@ -1,3 +1,6 @@
+create schema r100_schema;
+grant all privileges on r100_schema.* to 'user01'@'%';
+
 ### 배치 commit size ###
  - --job.name=jpaPageJob v=1 chunkSize=100
  - chunkSize 를 파라미터로 받으면서 속도 차이를 확인

@@ -24,7 +24,6 @@ public class Tasklet implements org.quartz.Job {
         tasklet_batchBuild();
     }
 
-
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 

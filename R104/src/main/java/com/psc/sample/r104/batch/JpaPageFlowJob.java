@@ -71,7 +71,6 @@ public class JpaPageFlowJob {
 
     @Bean
     public Step jpaPageJob_2_batchStep1() {
-
         return stepBuilderFactory.get("JpaPageFlowJob_2_Step")
                 .<Dept, Dept2>chunk(chunkSize)
                 .reader(jpaPageJob_2_dbItemReader())

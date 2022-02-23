@@ -32,7 +32,6 @@ public class JpaPageJob {
     private final EntityManagerFactory entityManagerFactory;
 
 
-
     @Bean
     public Job jpaPageJob_batchBuild() {
         return jobBuilderFactory.get("jpaPageJob")
@@ -43,9 +42,6 @@ public class JpaPageJob {
     @Bean
     @JobScope
     public Step jpaPageJob_batchStep1(@Value("#{jobParameters[chunkSize]}") int chunkSize) {
-
-        log.debug("chunkSize---->: "+ chunkSize);
-
         return stepBuilderFactory.get("JpaPageJob1_Step")
                 .<Dept, Dept2>chunk(chunkSize)
                 .reader(jpaPageJob_dbItemReader(0))
