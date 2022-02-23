@@ -1,6 +1,5 @@
 ## [Can I help you?](https://www.youtube.com/playlist?list=PLogzC_RPf25H3WIJH1zq8VsmzlvVYML50)
  - 스프링 관련 코딩 해 드려요 ㅎ
- - 개인 키가 있어서 오픈하면 안되요~!!!
 
 ### R101 OAuth2 를 이용한 google, naver login
  - [youtube 강의 링크](https://youtu.be/5jOn-t1MbvY)
@@ -29,4 +28,10 @@
   - 강의 안내
   - 멀티 데이터 소스 환경 구성 
   - 배치 파일 생성
+
+### R104 커밋 사이즈와 병렬 배치에 대해서.
+- youtube 강의 링크
+- 내용
+  - chunkSize
+  - parallel
  
